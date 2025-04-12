@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    background: radial-gradient(circle at top, #f44336, #d32f2f);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .pokedex-frame {
+    width: 100%;
+    max-width: 800px;
+    background-color: #e53935;
+    border: 8px solid #b71c1c;
+    border-radius: 16px;
+    box-shadow: inset 0 0 0 5px #fce4ec, 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+  }
+  

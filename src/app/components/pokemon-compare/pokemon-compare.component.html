@@ -1,0 +1,52 @@
+<div class="pokedex-frame">
+    <button (click)="goBack()" class="back-button">← Voltar para a Pokédex</button>
+  
+    <h2 class="pokedex-title">Comparar Pokémons</h2>
+  
+    <div class="inputs">
+      <input
+        type="text"
+        [(ngModel)]="name1"
+        placeholder="1º Pokémon"
+        list="pokemon-options"
+      />
+      <input
+        type="text"
+        [(ngModel)]="name2"
+        placeholder="2º Pokémon"
+        list="pokemon-options"
+      />
+      <button (click)="compare()">Comparar</button>
+  
+      <datalist id="pokemon-options">
+        <option *ngFor="let name of pokemons" [value]="name"></option>
+      </datalist>
+    </div>
+  
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+  
+    <div *ngIf="pokemon1 && pokemon2" class="compare-result">
+      <div class="pokemon-card">
+        <h3>{{ pokemon1.name | titlecase }}</h3>
+        <img [src]="pokemon1.sprites.front_default" alt="{{ pokemon1.name }}" />
+        <p *ngFor="let stat of pokemon1.stats">
+          {{ stat.stat.name | titlecase }}: {{ stat.base_stat }}
+        </p>
+        <p class="total">Total: {{ total1 }}</p>
+      </div>
+  
+      <div class="pokemon-card">
+        <h3>{{ pokemon2.name | titlecase }}</h3>
+        <img [src]="pokemon2.sprites.front_default" alt="{{ pokemon2.name }}" />
+        <p *ngFor="let stat of pokemon2.stats">
+          {{ stat.stat.name | titlecase }}: {{ stat.base_stat }}
+        </p>
+        <p class="total">Total: {{ total2 }}</p>
+      </div>
+    </div>
+  
+    <div *ngIf="winner" class="winner-display">
+      🏆 <strong>{{ winner === 'Empate' ? 'Empate!' : 'Vencedor: ' + winner | titlecase }}</strong>
+    </div>
+  </div>
+  

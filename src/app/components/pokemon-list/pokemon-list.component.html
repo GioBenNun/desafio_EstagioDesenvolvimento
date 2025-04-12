@@ -1,0 +1,20 @@
+<div class="pokedex-frame">
+  <a routerLink="/compare" class="compare-link">⚔️ Comparar Pokémons</a>
+
+  <h1 class="pokedex-title">Pokédex</h1>
+  <input
+    type="text"
+    placeholder="Buscar Pokémon..."
+    (input)="onInputChange($event)"
+    class="pokedex-input"
+  />
+
+  <ul class="pokemon-list">
+    <li
+      *ngFor="let pokemon of filteredPokemons"
+      (click)="goToDetails(pokemon.name)"
+    >
+      {{ pokemon.name | titlecase }}
+    </li>
+  </ul>
+</div>

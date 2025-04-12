@@ -1,20 +1,25 @@
-# 📱 Pokédex - Comparador de Pokémons
+<p align="center">
+  <img src="./squirtle.gif" alt="Squirtle animado" width="160" />
+</p>
 
-Uma Pokédex interativa desenvolvida com Angular, que permite listar, buscar, visualizar detalhes e comparar Pokémons da primeira geração utilizando a PokéAPI.
+<h1 align="center">📱 Pokédex App</h1>
 
-![Preview do Projeto](https://raw.githubusercontent.com/GioBenNun/Pokedex/main/capa.png) 
+<p align="center">
+  Uma Pokédex interativa feita com Angular, inspirada no universo Pokémon.
+  Explore, busque, visualize e compare seus Pokémons favoritos da primeira geração! ⚔️🔥🌿
+</p>
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🔍 **Busca por nome** com filtro dinâmico
-- 📋 **Lista de Pokémons** com scroll automático
-- 🧾 **Visualização de detalhes** (altura, peso, status base, total de status)
-- ⚔️ **Comparação entre dois Pokémons**
-  - Sugestões automáticas (autocomplete)
+- 🔍 Busca com filtro dinâmico e em tempo real
+- 📋 Listagem completa de Pokémons da primeira geração
+- 📖 Página de detalhes com imagem, altura, peso e status
+- ⚔️ Tela de comparação entre dois Pokémons
+  - Sugestões automáticas com autocomplete
   - Exibição lado a lado com destaque do vencedor
-- 🎨 Visual estilizado inspirado em uma Pokédex clássica
+- 🎨 Interface estilizada com visual de Pokédex retrô
 
 ---
 
